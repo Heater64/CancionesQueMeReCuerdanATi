@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;500&display=swap');
+
+:root {
+  --rosa: #f7cad0;
+  --rosa-oscuro: #e6a1b0;
+  --negro: #1b1b1b;
+  --blanco: #fffafc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, var(--rosa) 0%, var(--blanco) 100%);
+  font-family: 'Quicksand', sans-serif;
+  color: var(--negro);
+  line-height: 1.6;
+  overflow-x: hidden;
+  animation: fadeIn 1.2s ease-in;
+}
+
+header {
+  text-align: center;
+  background: var(--negro);
+  color: var(--rosa);
+  padding: 30px 20px;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 4px solid var(--rosa);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  animation: slideDown 1s ease;
+}
+
+main {
+  padding: 25px;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  background: var(--blanco);
+  margin-bottom: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid var(--rosa-oscuro);
+  animation: fadeUp 0.9s ease both;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2 {
+  color: var(--negro);
+  margin-top: 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--rosa);
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* ✍️ Efecto de escritura */
+.typing {
+  border-right: 2px solid var(--rosa-oscuro);
+  white-space: pre-wrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  outline: none;
+  accent-color: var(--rosa-oscuro);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: var(--rosa);
+  background: var(--negro);
+  font-style: italic;
+  border-top: 3px solid var(--rosa);
+}
+
+/* 🌟 Animaciones generales */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Adaptación móvil */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.6em;
+    padding: 20px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+p::after {
+  content: '|';
+  display: inline-block;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+  color: #e6a1b0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.cover {
+  width: 100%;         /* Se adapta al ancho del contenedor */
+  max-width: 300px;    /* Tamaño máximo */
+  display: block;      /* Evita que se alinee a la izquierda o derecha */
+  margin: 15px auto;   /* Centra la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
