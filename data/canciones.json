@@ -1,0 +1,44 @@
+{
+  "categorias": [
+    {
+      "id": "romanticas",
+      "nombre": "💕 Románticas",
+      "icono": "💕",
+      "canciones": [
+        {
+          "id": 1,
+          "titulo": "Si No Estás",
+          "artista": "Iñigo Quintero",
+          "album": "Baladas 2023",
+          "cover": "Fotos/1200x1200bf-60.jpg",
+          "audio": "Canciones/Si No Estás – Iñigo Quintero.m4a",
+          "letra": "Quiero ver tu otra mitad..."
+        }
+      ]
+    },
+    {
+      "id": "regueton",
+      "nombre": "🔥 Reguetón",
+      "icono": "🔥",
+      "canciones": []
+    },
+    {
+      "id": "pop",
+      "nombre": "🎤 Pop",
+      "icono": "🎤",
+      "canciones": []
+    },
+    {
+      "id": "trap",
+      "nombre": "🎧 Trap/Urban",
+      "icono": "🎧",
+      "canciones": []
+    },
+    {
+      "id": "baladas",
+      "nombre": "🎹 Baladas",
+      "icono": "🎹",
+      "canciones": []
+    }
+  ]
+}

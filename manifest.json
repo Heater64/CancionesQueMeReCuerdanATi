@@ -1,0 +1,52 @@
+{
+  "name": "Tu Playlist Romántica",
+  "short_name": "Playlist RM",
+  "description": "Canciones que me recuerdan a ti",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ff5e7e",
+  "background_color": "#0a0a0c",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "Fotos/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "Fotos/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
