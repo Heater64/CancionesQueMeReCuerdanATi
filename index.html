@@ -2,33 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canciones que me recuerdan a ti 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Canciones que me recuerdan a ti 💖 | Apple Style</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER SIMPLE (sin menú innecesario) -->
-  <header class="simple-header">
-    <div class="logo">🎶 Tu Playlist Romántica 💖</div>
-    <div class="nav-right">
-      <img src="https://via.placeholder.com/38x38" alt="Avatar" class="avatar">
+  <!-- PARTICLE BACKGROUND -->
+  <div class="particle-bg" id="particleBg"></div>
+
+  <!-- HEADER FLOTANTE -->
+  <header class="app-header" id="appHeader">
+    <div class="header-content">
+      <div class="logo">
+        🎵 tu playlist <span>· para ti</span>
+      </div>
+      <div class="header-right">
+        <img src="https://ui-avatars.com/api/?background=ff5e7e&color=fff&rounded=true&bold=true&size=32&name=❤️" alt="Avatar" class="avatar">
+      </div>
     </div>
   </header>
 
-  <!-- LAYOUT PRINCIPAL (3 columnas) -->
+  <!-- LAYOUT PRINCIPAL -->
   <div class="main-layout">
     
-    <!-- COLUMNA IZQUIERDA: Reproductor -->
+    <!-- COLUMNA IZQUIERDA: REPRODUCTOR -->
     <div class="left-column">
-      <h1 class="hero-title">Canciones que me recuerdan a ti 🤍</h1>
+      <h1 class="hero-title">Canciones que me<br>recuerdan a ti 🤍</h1>
       
       <div class="player-card">
-        <img id="currentCover" src="Fotos/1200x1200bf-60.jpg" alt="Portada" class="player-cover">
+        <div class="player-cover-wrapper">
+          <img id="currentCover" src="Fotos/1200x1200bf-60.jpg" alt="Portada" class="player-cover">
+        </div>
         <div class="player-info">
           <h2 id="currentSong">Si No Estás</h2>
           <p class="artist" id="currentArtist">Iñigo Quintero</p>
-          <p class="album" id="currentAlbum">Balada • 2023</p>
+          <p class="album" id="currentAlbum">Balada · 2023</p>
         </div>
         
         <button class="play-btn" id="playPauseBtn">
@@ -46,29 +55,37 @@
         <div class="controls">
           <span class="control-icon" id="prevBtn">⏮</span>
           <span class="control-icon" id="nextBtn">⏭</span>
-          <span class="control-icon" id="volumeIcon">🔊</span>
-          <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+          <div class="volume-control">
+            <span class="control-icon" id="volumeIcon">🔊</span>
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- COLUMNA CENTRAL: Letras -->
+    <!-- COLUMNA CENTRAL: LETRAS KARAOKE -->
     <div class="lyrics-column">
-      <div class="lyrics-title">🎤 Letra en vivo</div>
+      <div class="lyrics-title">🎤 LETRA EN VIVO</div>
       <div id="lyricsContainer" class="lyrics-container">
         <div class="lyrics-placeholder">▶ Presiona play para ver la letra</div>
       </div>
     </div>
 
-    <!-- COLUMNA DERECHA: Lista de canciones -->
+    <!-- COLUMNA DERECHA: LISTA DE CANCIONES -->
     <div class="sidebar">
       <h3>Todas las canciones</h3>
       <div id="snippetsList"></div>
     </div>
   </div>
 
+  <!-- CORAZÓN ANIMADO -->
+  <div class="heart-beat" id="heartBeat">❤️</div>
+
+  <!-- NOTIFICACIÓN FLOTANTE -->
+  <div id="floatingNotification" class="floating-notification">✨ Reproduciendo...</div>
+
   <footer>
-    Hecho con amor para ti 🤍<br>TupececitoFav - Tu Peluchito 🐻
+    Hecho con amor para ti 🤍 · TupececitoFav · Tu Peluchito 🐻
   </footer>
 
   <audio id="audioPlayer"></audio>
